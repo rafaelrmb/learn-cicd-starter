@@ -18,7 +18,7 @@ func TestGetAPIKey(t *testing.T) {
 				"Authorization": []string{""},
 			},
 			wantAPIKey: "",
-			wantErr:    false,
+			wantErr:    true,
 		},
 		{
 			name: "malformed Authorization header (missing 'ApiKey' prefix)",
